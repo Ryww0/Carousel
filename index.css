@@ -1,0 +1,66 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+:root {
+  --sheesh: #77ff6a;
+  font-family: "Fascinate", cursive;
+}
+body {
+  background: linear-gradient(45deg, #692ded, #00ffff);
+  position: relative;
+}
+p {
+  position: absolute;
+  font-size: 25rem;
+  left: 1160px;
+  color: var(--sheesh);
+  opacity: 0.4;
+}
+.carousel-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+.carousel {
+  display: flex;
+  align-items: center;
+  width: 500px;
+  position: relative;
+  box-shadow: 10px 10px 35px 0 rgba(0, 0, 0, 0.3);
+}
+.slides {
+  overflow: hidden;
+  display: flex;
+  border-radius: 10px;
+  outline: solid var(--sheesh);
+}
+.slide {
+  transform: translateX(0);
+  width: 500px;
+  transition: 500ms ease-in-out;
+}
+button {
+  width: 150px;
+  margin-top: 15px;
+  margin-right: 10px;
+  border-radius: 10px;
+  border: none;
+  background: var(--sheesh);
+  cursor: pointer;
+}
+button img {
+  margin: auto;
+}
+.btn-left,
+.btn-right {
+  width: 30px;
+}
+button:hover {
+  filter: brightness(1.2);
+}
+button:active {
+  transform: scale(0.985);
+}
